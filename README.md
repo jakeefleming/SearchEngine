@@ -1,4 +1,4 @@
-# CS50 TSE - Jake Fleming - Lab 6 Extension
+# CS50 TSE - Jake Fleming
 ## GitHub: jakeefleming
 
 The assignment and Specs are in a [public repo](https://github.com/CS50DartmouthFA24/labs/tse).
