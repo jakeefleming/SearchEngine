@@ -1,0 +1,72 @@
+Running invalid argument tests 1-4...
+Test './querier' failed as expected
+Test './querier /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/toscrape-2' failed as expected
+Test './querier /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/toscrape-2 /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/toscrape-2.index extra_arg' failed as expected
+Test './querier invalid_dir /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/toscrape-2.index' failed as expected
+
+Run the following tests:
+
+fifty shades
+tears and joy
+romance or mystery
+love and hate or war and peace
+xyzzy
+ 
+and fifty
+fifty or
+joy and and tears
+happy or or sad
+science fiction and fantasy or horror
+the
+
+
+Running querier integration tests 5-16...
+Error: Invalid query syntax.
+Expected invlid query
+
+Error: 'and'/'or' cannot be at the beginning or end.
+Error: Invalid query syntax.
+Expected leading AND error
+
+Error: 'and'/'or' cannot be at the beginning or end.
+Error: Invalid query syntax.
+Expected trailing OR error
+
+Error: 'and'/'or' cannot be consecutive.
+Error: Invalid query syntax.
+Expected consecutive error
+
+Error: 'and'/'or' cannot be consecutive.
+Error: Invalid query syntax.
+Expected consecutive error
+
+
+Sample output from test1.txt (fifty shades):
+Query? Matches 24 documents (ranked):
+score 11 doc 477: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/fifty-shades-darker-fifty-shades-2_892/index.html
+score 7 doc 193: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/fifty-shades-freed-fifty-shades-3_156/index.html
+score 5 doc 456: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/grey-fifty-shades-4_592/index.html
+score 1 doc 476: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/the-wedding-dress_864/index.html
+score 1 doc 475: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/suddenly-in-love-lake-haven-1_835/index.html
+score 1 doc 474: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/something-more-than-this_834/index.html
+score 1 doc 473: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/doing-it-over-most-likely-to-1_802/index.html
+score 1 doc 472: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/the-wedding-pact-the-omalleys-2_767/index.html
+score 1 doc 471: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/hold-your-breath-search-and-rescue-1_700/index.html
+
+Sample output from test4.txt (love and hate or war and peace):
+Query? Matches 21 documents (ranked):
+score 2 doc 392: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/reasons-to-stay-alive_959/index.html
+score 2 doc 243: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/the-disappearing-spoon-and-other-true-tales-of-madness-love-and-the-history-of-the-world-from-the-periodic-table-of-the-elements_244/index.html
+score 2 doc 148: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/americas-war-for-the-greater-middle-east-a-military-history_361/index.html
+score 2 doc 103: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/setting-the-world-on-fire-the-brief-astonishing-life-of-st-catherine-of-siena_603/index.html
+score 1 doc 541: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/world-without-end-the-pillars-of-the-earth-2_420/index.html
+score 1 doc 518: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/i-hate-fairyland-vol-1-madly-ever-after-i-hate-fairyland-compilations-1-5_899/index.html
+score 1 doc 517: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/i-am-a-hero-omnibus-volume-1_898/index.html
+score 1 doc 516: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/giant-days-vol-2-giant-days-5-8_895/index.html
+score 1 doc 515: http://cs50tse.cs.dartmouth.edu/tse/toscrape/catalogue/danganronpa-volume-1_889/index.html
+
+Running valgrind tests for memory leaks...
+PASS: No memory leaks in querier for 'test1.query'
+PASS: No memory leaks in querier for 'test4.query'
+
+All tests completed.

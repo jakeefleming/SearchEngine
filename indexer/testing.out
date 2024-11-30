@@ -1,0 +1,42 @@
+Running invalid argument tests 1-6...
+Test './indexer' failed as expected
+Test './indexer /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/letters-3' failed as expected
+Test './indexer /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/letters-3 letters.index extra_arg' failed as expected
+Test './indexer invalid_path letters.index' failed as expected
+Test './indexer . letters.index' failed as expected
+Test './indexer /thayerfs/home/f006fz8/cs50-dev/shared/tse/output/letters-3 invalid_dir/index' failed as expected
+
+Running valid integration tests 7-9...
+
+Sample output from letters.index (first 10 lines):
+playground 1 1
+page 1 1
+this 1 1
+home 6 1 5 1 4 1 3 1 2 1 1 2
+depth 5 1
+eniac 4 1
+the 1 1
+for 6 1 5 1 4 1 3 1 2 1 1 1
+breadth 3 1
+tse 1 1
+
+Test 10-12 indextest re-writing of index files...
+Index successfully loaded from letters.index and saved to test.index
+Comparison complete for letters index
+
+Index successfully loaded from toscrape.index and saved to test.index
+Comparison complete for toscrape index
+
+Index successfully loaded from wikipedia.index and saved to test.index
+Comparison complete for wikipedia index
+
+Test 13: Compare wikipedia-1 with provided output
+
+Nothing printed by indexcmp implies files were all the same
+
+Running valgrind tests 14-15...
+PASS: No memory leaks in indexer
+
+PASS: No memory leaks in indextest
+
+All tests completed.
