@@ -1,8 +1,3 @@
-```
-******************
-* EXTENSION USED *
-******************
-```
 # CS50 TSE - Jake Fleming - Lab 6 Extension
 ## GitHub: jakeefleming
 
