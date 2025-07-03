@@ -12,7 +12,7 @@ The *querier* module takes two parameters, `./querier pageDirectory indexFilenam
 See the implementation spec for details here. 
 
 ### Assumptions
-The users' query must be no longer than 100 words including "and" and "or"
+The user's query must be no longer than 100 words including "and" and "or"
 
 ### Files
 - `Makefile` - compilation procedure
