@@ -1,6 +1,6 @@
-# CS50 Tiny Search Engine
+# Search Engine
 
-## CS50 Fall 2024
+## Fall 2024
 
 ### Indexer
 An `indexer` is a module that reads documents from a pageDirectory (created by the crawler) and adds words to an index data structure that counts the number of times a word shows up in each document. 
