@@ -1,6 +1,6 @@
-# CS50 Tiny Search Engine
+# Search Engine
 
-## CS50 Fall 2024
+## Fall 2024
 
 ### Querier
 An `querier` is a module that searches for word requests in an index file, gathering the documents they are found in and printing out those webpage URLs from the pageDirectory to the user. It handles logic with AND and OR requests so you can do more complex web searches.
