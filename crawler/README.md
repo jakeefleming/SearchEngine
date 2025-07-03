@@ -1,6 +1,6 @@
-# CS50 Tiny Search Engine
+# Search Engine
 
-## CS50 Fall 2024
+## Fall 2024
 
 ### Crawler
 A `crawler` is a module that searches for links within HTML code, recursively adding every URL it visits to a pageDirectory at a given depth so that they can later be accessed by our tiny search engine.
